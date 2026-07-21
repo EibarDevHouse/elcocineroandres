@@ -52,12 +52,12 @@ export async function createReview(
   try {
     const { data, error } = await supabase
       .from('reviews')
-      .insert({
+      .insert([{
         name: trimmedName,
         dish,
         stars,
         text: trimmedText,
-      })
+      }] as any)
       .select()
       .single();
 

@@ -16,7 +16,8 @@
       "Bash(curl -s http://localhost:3000/menu)",
       "Bash(curl -s http://localhost:3000/reviews)",
       "Bash(findstr \"eslint|babel|webpack\")",
-      "Bash(powershell -Command \"if \\(Test-Path '.\\\\.next'\\) { \\(Get-Item '.\\\\.next' | Measure-Object -Sum -Property Length -Recurse\\).Sum / 1MB }\")"
+      "Bash(powershell -Command \"if \\(Test-Path '.\\\\.next'\\) { \\(Get-Item '.\\\\.next' | Measure-Object -Sum -Property Length -Recurse\\).Sum / 1MB }\")",
+      "Bash(npx tsc *)"
     ]
   }
 }
