@@ -98,9 +98,11 @@
 }
 
 .categoryLabel {
-  font-size: 32px;
+  font-family: Caprasimo, serif;
+  font-size: 36px;
   font-weight: 700;
   text-align: center;
+  color: #fff;
 }
 
 .pageHeader {

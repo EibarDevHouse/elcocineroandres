@@ -36,7 +36,6 @@ export default function CategoriesPage() {
             className={styles.categoryCard}
             style={{ backgroundImage: category.backgroundImage }}
           >
-            <div className={styles.categoryEmoji}>{category.emoji}</div>
             <div className={styles.categoryLabel}>{category.label}</div>
           </Link>
         ))}
