@@ -1,6 +1,7 @@
 import { createClient } from '@supabase/supabase-js';
+import { Database } from './database.types';
 
-let supabaseClient: ReturnType<typeof createClient> | null = null;
+let supabaseClient: ReturnType<typeof createClient<Database>> | null = null;
 
 function initializeSupabase() {
   if (!supabaseClient) {
@@ -13,7 +14,7 @@ function initializeSupabase() {
       );
     }
 
-    supabaseClient = createClient(url, serviceRoleKey);
+    supabaseClient = createClient<Database>(url, serviceRoleKey);
   }
   return supabaseClient;
 }
@@ -22,4 +23,4 @@ export const supabase = new Proxy({}, {
   get: (_target, prop) => {
     return (initializeSupabase() as any)[prop];
   },
-}) as ReturnType<typeof createClient>;
+}) as ReturnType<typeof createClient<Database>>;
