@@ -10,7 +10,8 @@
       "Bash(findstr \"lib\")",
       "Bash(pnpm tsc *)",
       "Bash(git add *)",
-      "Bash(git commit -m ' *)"
+      "Bash(git commit -m ' *)",
+      "Bash(git commit -m 'Use Supabase service role key for server-side operations *)"
     ]
   }
 }
