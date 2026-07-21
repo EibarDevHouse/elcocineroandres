@@ -10,28 +10,56 @@ import menuStyles from './MenuPage.module.css';
 interface Combo {
   id: string;
   name: string;
+  displayName: string;
   price: number;
   desc: string;
+  macros?: {
+    calories: number;
+    protein: number;
+    carbs: number;
+    fat: number;
+  };
 }
 
 const COMBOS: Combo[] = [
   {
     id: 'combo-2',
     name: '2 Tacos',
+    displayName: 'Snack para 2',
     price: 5.5,
-    desc: '1 Birria + 1 Pollo Copal',
+    desc: 'Res 80g • Pollo 75g • Tortillas 50g\n1 Birria + 1 Pollo Copal',
+    macros: {
+      calories: 530,
+      protein: 40,
+      carbs: 40,
+      fat: 24,
+    },
   },
   {
     id: 'combo-3',
     name: '3 Tacos',
+    displayName: 'Combo Deficit',
     price: 8,
-    desc: '1 Birria + 2 Pollo Copal',
+    desc: 'Res 80g • Pollo 150g • Tortillas 75g\n1 Birria + 2 Pollo Copal',
+    macros: {
+      calories: 775,
+      protein: 62,
+      carbs: 58,
+      fat: 34,
+    },
   },
   {
     id: 'combo-4',
     name: '4 Tacos',
+    displayName: 'Combo Aumento/Elite',
     price: 10,
-    desc: '2 Birria + 2 Pollo Copal',
+    desc: 'Res 160g • Pollo 150g • Tortillas 100g\n2 Birria + 2 Pollo Copal',
+    macros: {
+      calories: 1060,
+      protein: 80,
+      carbs: 80,
+      fat: 48,
+    },
   },
 ];
 
@@ -127,41 +155,69 @@ export default function MenuPage({ reviews, category = 'tacos' }: MenuPageProps)
       </div>
 
       <div className={styles.dishesContainer}>
-        {filteredItems.map((d) => (
-          <article key={d.id} className={styles.dishCard}>
-            <div className={styles.dishImage}>📷</div>
-            <div className={styles.dishContent}>
-              <div className={styles.dishHeader}>
-                <h3 className={styles.dishName}>{d.name}</h3>
-                <span className={styles.dishPrice}>{d.priceLabel}</span>
+        {filteredItems.map((d) => {
+          const dish = DISHES.find((x) => x.id === d.id);
+          return (
+            <article key={d.id} className={styles.dishCard}>
+              <div className={styles.dishImageWrapper}>
+                <div className={styles.dishImage}>📷</div>
+                {dish?.macros && (
+                  <div className={styles.macroBadge}>
+                    <div className={styles.macroCalories}>{dish.macros.calories}</div>
+                    <div className={styles.macroLabel}>cal</div>
+                  </div>
+                )}
               </div>
-              <div className={styles.dishRating}>
-                <span className={styles.dishStars}>{d.stars}</span>
-                <span className={styles.dishRatingLabel}>
-                  {d.ratingLabel}
-                </span>
+              <div className={styles.dishContent}>
+                <div className={styles.dishHeader}>
+                  <h3 className={styles.dishName}>{d.name}</h3>
+                  <span className={styles.dishPrice}>{d.priceLabel}</span>
+                </div>
+                <div className={styles.dishRating}>
+                  <span className={styles.dishStars}>{d.stars}</span>
+                  <span className={styles.dishRatingLabel}>
+                    {d.ratingLabel}
+                  </span>
+                </div>
+                <p className={styles.dishDesc}>{d.desc}</p>
               </div>
-              <p className={styles.dishDesc}>{d.desc}</p>
-            </div>
-          </article>
-        ))}
+            </article>
+          );
+        })}
       </div>
 
       {category === 'tacos' && (
         <>
           <h2 className={styles.combosTitle}>Combos Tacos</h2>
           <div className={styles.combosList}>
-            {combos.map((c) => (
-              <div key={c.id} className={styles.comboCard}>
-                <div>
-                  <div className={styles.comboName}>{c.name}</div>
-                  <div className={styles.comboDesc}>{c.desc}</div>
+            {combos.map((c) => {
+              const tacoCount = parseInt(c.name[0]);
+              return (
+                <div key={c.id} className={styles.comboCard}>
+                  <div className={styles.comboTop}>
+                    <div className={styles.comboLeft}>
+                      <div className={styles.comboDisplayName}>{c.displayName}</div>
+                      <div className={styles.comboEmojis}>
+                        {'🌮'.repeat(tacoCount)}
+                      </div>
+                    </div>
+                    <div className={styles.comboPrice}>{c.priceLabel}</div>
+                  </div>
+                  <div className={styles.comboBottom}>
+                    <div className={styles.comboInfo}>
+                      <div className={styles.comboName}>{c.name}</div>
+                      <div className={styles.comboDesc}>{c.desc}</div>
+                    </div>
+                    {c.macros && (
+                      <div className={styles.comboMacroBadge}>
+                        <div className={styles.comboMacroCalories}>{c.macros.calories}</div>
+                        <div className={styles.comboMacroLabel}>cal</div>
+                      </div>
+                    )}
+                  </div>
                 </div>
-                <div className={styles.comboRight}>
-                  <span className={styles.comboPrice}>{c.priceLabel}</span>
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </>
       )}
