@@ -40,19 +40,30 @@ export function mapDbReviewToReview(row: DbReview): Review {
 
 export async function getReviews(): Promise<Review[]> {
   try {
-    const { data, error } = await supabase
-      .from('reviews')
-      .select('*')
-      .order('created_at', { ascending: false });
+    const timeoutPromise = new Promise<never>((_, reject) =>
+      setTimeout(() => reject(new Error('Reviews fetch timeout')), 2000)
+    );
+
+    const { data, error } = await Promise.race([
+      supabase
+        .from('reviews')
+        .select('*')
+        .order('created_at', { ascending: false }),
+      timeoutPromise,
+    ]);
 
     if (error) {
-      console.error('Error fetching reviews:', error);
+      console.warn('Error fetching reviews (non-fatal):', error.message);
       return [];
     }
 
     return (data || []).map(mapDbReviewToReview);
   } catch (err) {
-    console.error('Unexpected error fetching reviews:', err);
+    if (err instanceof Error && err.message === 'Reviews fetch timeout') {
+      console.warn('Reviews fetch timed out, returning empty list');
+    } else {
+      console.error('Unexpected error fetching reviews:', err);
+    }
     return [];
   }
 }

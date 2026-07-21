@@ -449,7 +449,7 @@ export default function ElCocineroAndres({
         </main>
       )}
 
-      <nav className={styles.nav}>
+      {/* <nav className={styles.nav}>
         <div
           onClick={() => setTab('menu')}
           className={styles.navItem}
@@ -510,7 +510,7 @@ export default function ElCocineroAndres({
           </svg>
           <span>Reviews</span>
         </div>
-      </nav>
+      </nav> */}
     </div>
   );
 }
