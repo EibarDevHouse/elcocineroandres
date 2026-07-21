@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd c:\\\\\\\\Users\\\\\\\\ejhea\\\\\\\\LaDevHouse\\\\\\\\elcocineroandres)",
+      "PowerShell(Get-Process -Name \"node\" -ErrorAction SilentlyContinue)",
+      "PowerShell(Stop-Process -Force -ErrorAction SilentlyContinue)",
+      "Skill(run)",
+      "Skill(run:*)",
+      "Bash(git -C \"c:\\\\Users\\\\ejhea\\\\LaDevHouse\\\\elcocineroandres\" status --short)",
+      "Bash(findstr \"lib\")",
+      "Bash(pnpm tsc *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)"
+    ]
+  }
+}
