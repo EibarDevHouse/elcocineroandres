@@ -65,7 +65,7 @@
   border-radius: 16px;
   text-decoration: none;
   color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: none;
   transition: all 0.3s ease;
   min-height: 250px;
   position: relative;

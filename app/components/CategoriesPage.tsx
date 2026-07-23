@@ -8,19 +8,19 @@ const CATEGORIES = [
     id: 'tacos',
     label: 'Tacos',
     emoji: '🌮',
-    backgroundImage: 'url(https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=1200&h=400&fit=crop)'
+    backgroundImage: 'url(/tacos.jpg)',
   },
   {
     id: 'pizzas',
     label: 'Pizzas',
     emoji: '🍕',
-    backgroundImage: 'url(https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?w=1200&h=400&fit=crop)'
+    backgroundImage: 'url(/pizzas-2.jpeg)',
   },
   {
     id: 'ceviches',
     label: 'Ceviches',
     emoji: '🍤',
-    backgroundImage: 'url(https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1200&h=400&fit=crop)'
+    backgroundImage: 'url(/ceviches.jpeg)',
   },
 ];
 

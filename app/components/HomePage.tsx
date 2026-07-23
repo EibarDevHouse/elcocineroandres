@@ -77,27 +77,6 @@ export default function HomePage({ reviews }: HomePageProps) {
         </div>
       </section>
 
-      <section className={styles.promosSection}>
-        <h2 className={styles.sectionTitle}>Promos de la semana</h2>
-        <div className={styles.promosList}>
-          <div className={styles.promoCard}>
-            <div>
-              <div className={styles.promoTitle}>Combo 4 Tacos</div>
-              <div className={styles.promoDesc}>
-                2 Birria + 2 Pollo Copal · llévalo por menos
-              </div>
-            </div>
-            <div className={styles.promoPrice}>$10</div>
-          </div>
-          <div className={styles.promoPlaceholder}>
-            <div className={styles.placeholderTitle}>Tu promo aquí</div>
-            <div className={styles.placeholderDesc}>
-              Espacio para promoción especial — edítame
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section className={styles.favoritesSection}>
         <h2 className={styles.sectionTitle}>Favoritos de la casa</h2>
         <div className={styles.favoritesList}>

@@ -27,7 +27,7 @@ const COMBOS: Combo[] = [
     name: '2 Tacos',
     displayName: 'Snack para 2',
     price: 5.5,
-    desc: 'Res 80g • Pollo 75g • Tortillas 50g\n1 Birria + 1 Pollo Copal',
+    desc: 'Res 50g • Pollo 50g • Tortillas 40g\n1 Birria + 1 Pollo Copal',
     macros: {
       calories: 530,
       protein: 40,
@@ -74,7 +74,10 @@ interface MenuPageProps {
   category?: DishCategory;
 }
 
-export default function MenuPage({ reviews, category = 'tacos' }: MenuPageProps) {
+export default function MenuPage({
+  reviews,
+  category = 'tacos',
+}: MenuPageProps) {
   const whatsappNumber = '+584125458726';
 
   const starStr = (v: number) => {
@@ -132,7 +135,8 @@ export default function MenuPage({ reviews, category = 'tacos' }: MenuPageProps)
     return dish?.category === category;
   });
 
-  const categoryLabel = CATEGORIES.find((c) => c.id === category)?.label || 'Menú';
+  const categoryLabel =
+    CATEGORIES.find((c) => c.id === category)?.label || 'Menú';
 
   return (
     <main className={styles.main}>
@@ -160,10 +164,14 @@ export default function MenuPage({ reviews, category = 'tacos' }: MenuPageProps)
           return (
             <article key={d.id} className={styles.dishCard}>
               <div className={styles.dishImageWrapper}>
-                <div className={styles.dishImage}>📷</div>
+                <div className={styles.dishImage}>
+                  <video src="/taco-birria-animation.mp4" autoPlay muted loop />
+                </div>
                 {dish?.macros && (
                   <div className={styles.macroBadge}>
-                    <div className={styles.macroCalories}>{dish.macros.calories}</div>
+                    <div className={styles.macroCalories}>
+                      {dish.macros.calories}
+                    </div>
                     <div className={styles.macroLabel}>cal</div>
                   </div>
                 )}
@@ -196,7 +204,9 @@ export default function MenuPage({ reviews, category = 'tacos' }: MenuPageProps)
                 <div key={c.id} className={styles.comboCard}>
                   <div className={styles.comboTop}>
                     <div className={styles.comboLeft}>
-                      <div className={styles.comboDisplayName}>{c.displayName}</div>
+                      <div className={styles.comboDisplayName}>
+                        {c.displayName}
+                      </div>
                       <div className={styles.comboEmojis}>
                         {'🌮'.repeat(tacoCount)}
                       </div>
@@ -210,7 +220,9 @@ export default function MenuPage({ reviews, category = 'tacos' }: MenuPageProps)
                     </div>
                     {c.macros && (
                       <div className={styles.comboMacroBadge}>
-                        <div className={styles.comboMacroCalories}>{c.macros.calories}</div>
+                        <div className={styles.comboMacroCalories}>
+                          {c.macros.calories}
+                        </div>
                         <div className={styles.comboMacroLabel}>cal</div>
                       </div>
                     )}
