@@ -165,7 +165,14 @@ export default function MenuPage({
             <article key={d.id} className={styles.dishCard}>
               <div className={styles.dishImageWrapper}>
                 <div className={styles.dishImage}>
-                  <video src="/taco-birria-animation.mp4" autoPlay muted loop />
+                  <video
+                    src={d.video}
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    disablePictureInPicture
+                  />
                 </div>
                 {dish?.macros && (
                   <div className={styles.macroBadge}>
