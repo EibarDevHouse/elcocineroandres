@@ -51,7 +51,7 @@ export const DISHES: Dish[] = [
     name: 'Pizzas Margarita',
     video: '/pizza-margarita-animation.mp4',
     price: 7.5,
-    desc: 'Pollo molido 150g • Mozzarella 24g • Salsa Napolitana 30g • Tres mini pizzas con base baja en carbohidratos, queso fundido e ingredientes frescos. Todo el antojo, cero culpa.',
+    desc: 'Pollo molido 150g • Mozzarella 24g • Salsa Napolitana 30g • La elegancia en su forma más pura. Pollo tierno que se deshace en cada bocado, derretido en mozzarella cremosa y abrazado por la intensidad de la salsa napolitana. Clásica, sofisticada, perfecta.',
     category: 'pizzas',
     macros: {
       calories: 420,
@@ -65,7 +65,7 @@ export const DISHES: Dish[] = [
     name: 'Pizzas Primavera',
     video: '/pizza-primavera-animation.mp4',
     price: 7.5,
-    desc: 'Pollo molido 150g • Mozzarella 24g • Salsa Napolitana 30g • Tocineta Ahumada 30g • Maíz enlatado 24g • Ideales si quieres un poco más de sabor a cambio de un poco más de calorías.',
+    desc: 'Pollo molido 150g • Mozzarella 24g • Salsa Napolitana 30g • Tocineta Ahumada 30g • Maíz enlatado 24g • Explosión de sabores en capas. Pollo suculento, mozzarella que cede bajo el diente, la dulzura del maíz fresco contrastando con el aroma ahumado de la tocineta. Un viaje sensorial que te enamora en cada sorbo.',
     category: 'pizzas',
     macros: {
       calories: 420,
@@ -79,7 +79,7 @@ export const DISHES: Dish[] = [
     name: 'Pizzas Funghi-Pomodoro',
     video: '/pizza-funghi-pomodoro-animation.mp4',
     price: 7.5,
-    desc: 'Pollo molido 150g • Mozzarella 24g • Salsa Napolitana 30g • Vegetales 30g • Tres mini pizzas con base baja en carbohidratos, queso fundido e ingredientes frescos. Todo el antojo, cero culpa.',
+    desc: 'Pollo molido 150g • Mozzarella 24g • Salsa Napolitana 30g • Vegetales 30g • Sofisticación hecha sabor. Pollo jugoso envuelto en mozzarella aterciopelada, coronado con la frescura vibrante de vegetales crujientes y el equilibrio umami de la salsa napolitana. Una sinfonía italiana en cada mordida.',
     category: 'pizzas',
     macros: {
       calories: 420,
