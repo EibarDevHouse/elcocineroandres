@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import type { Review } from '@/app/lib/reviews';
 import { DISHES } from '@/app/lib/dishes';
 import Link from 'next/link';
@@ -55,7 +56,14 @@ export default function HomePage({ reviews }: HomePageProps) {
     <main className={styles.main}>
       <section className={styles.heroSection}>
         <div className={styles.heroImage}>
-          <img width="100%"  src="/open-graph.jpg" />
+          <Image
+            src="/open-graph.jpg"
+            alt="Sabor que se apodera de tus sentidos"
+            fill
+            priority
+            quality={80}
+            style={{ objectFit: 'cover' }}
+          />
         </div>
         <h1 className={styles.heroTitle}>
           Sabor que se apodera de tus sentidos

@@ -172,6 +172,7 @@ export default function MenuPage({
                     loop
                     playsInline
                     disablePictureInPicture
+                    preload="metadata"
                   />
                 </div>
                 {dish?.macros && (

@@ -21,7 +21,7 @@ export const DISHES: Dish[] = [
   {
     id: 'taco-birria',
     name: 'Taco de Birria',
-    video: '/taco-birria-animation.mp4',
+    video: '/taco-birria-animation-2.mp4',
     price: 3,
     desc: 'Res 50g • Tortilla 20g • Res estofada lentamente en adobo de chiles, con su consomé para mojar. Jugoso, profundo y reconfortante.',
     category: 'tacos',
@@ -35,7 +35,7 @@ export const DISHES: Dish[] = [
   {
     id: 'taco-pollo',
     name: 'Taco de Pollo Copal',
-    video: '/taco-birria-animation.mp4',
+    video: '/taco-birria-animation-2.mp4',
     price: 3,
     desc: 'Pollo 75g • Tortilla 25g • Pollo marinado al estilo Copal, dorado y desmenuzado, con toques ahumados y vegetales frescos.',
     category: 'tacos',
@@ -49,7 +49,7 @@ export const DISHES: Dish[] = [
   {
     id: 'mini-pizzas',
     name: 'Mini Pizzas Keto',
-    video: '/taco-birria-animation.mp4',
+    video: '/taco-birria-animation-2.mp4',
     price: 8,
     desc: 'Tres mini pizzas con base baja en carbohidratos, queso fundido e ingredientes frescos. Todo el antojo, cero culpa.',
     category: 'pizzas',
@@ -63,7 +63,7 @@ export const DISHES: Dish[] = [
   {
     id: 'ceviche-180',
     name: 'Ceviche de Róbalo',
-    video: '/taco-birria-animation.mp4',
+    video: '/taco-birria-animation-2.mp4',
     price: 7,
     desc: 'Róbalo 180g • Róbalo fresco curado en limón con cebolla morada, cilantro y ají. Porción personal, fresca y ligera.',
     category: 'ceviches',
@@ -77,7 +77,7 @@ export const DISHES: Dish[] = [
   {
     id: 'ceviche-330',
     name: 'Ceviche de Róbalo',
-    video: '/taco-birria-animation.mp4',
+    video: '/taco-birria-animation-2.mp4',
     price: 12.5,
     desc: 'Róbalo 330g • Róbalo fresco, cítricos y el punto exacto de picante. Ideal para compartir (o no).',
     category: 'ceviches',

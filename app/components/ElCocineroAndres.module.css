@@ -458,6 +458,9 @@
   pointer-events: none;
   user-select: none;
   -webkit-user-select: none;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
 .dishImage video::-webkit-media-controls {
@@ -470,9 +473,9 @@
 
 .macroBadge {
   position: absolute;
-  top: -80px;
+  top: 20;
   right: 12px;
-  background: rgba(35, 60, 38, 0.92);
+  background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
   border-radius: 16px;
   padding: 10px 14px;
