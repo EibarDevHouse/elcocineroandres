@@ -241,6 +241,18 @@ export default function MenuPage({
           </div>
         </>
       )}
+
+      {category === 'pizzas' && (
+        <div className={menuStyles.pizzasNote}>
+          <div className={menuStyles.pizzasNoteEmoji}>🍕</div>
+          <div className={menuStyles.pizzasNoteContent}>
+            <h3 className={menuStyles.pizzasNoteTitle}>¿Quieres más sabor?</h3>
+            <p className={menuStyles.pizzasNoteDesc}>
+              Combina 3 pizzas de diferentes variedades — una de cada o como prefieras
+            </p>
+          </div>
+        </div>
+      )}
     </main>
   );
 }

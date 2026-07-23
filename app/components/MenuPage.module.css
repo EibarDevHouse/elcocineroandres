@@ -144,3 +144,39 @@
   height: 32px;
   stroke-width: 2;
 }
+
+.pizzasNote {
+  background: linear-gradient(135deg, #233c26 0%, #3a5c3f 100%);
+  border-radius: 20px;
+  padding: 18px;
+  margin: 26px 16px 20px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  box-shadow: 0 4px 12px rgba(35, 60, 38, 0.15);
+}
+
+.pizzasNoteEmoji {
+  font-size: 48px;
+  flex: none;
+  line-height: 1;
+}
+
+.pizzasNoteContent {
+  flex: 1;
+}
+
+.pizzasNoteTitle {
+  margin: 0 0 6px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  font-family: Caprasimo, serif;
+}
+
+.pizzasNoteDesc {
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.9);
+}
