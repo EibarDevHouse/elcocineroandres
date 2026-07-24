@@ -552,7 +552,7 @@
 
 .dishDesc {
   margin: 6px 0 0;
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.4;
   color: var(--color-text-dim);
 }
@@ -577,10 +577,11 @@
 
 .combosTitle {
   font-family: Caprasimo, serif;
-  font-size: 22px;
+  font-size: 36px;
   color: var(--color-primary);
-  margin: 26px 0 12px;
+  margin: 26px 0 24px;
   padding: 0 16px;
+  text-align: center;
 }
 
 .combosList {

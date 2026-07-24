@@ -29,7 +29,7 @@ const COMBOS: Combo[] = [
     price: 5.5,
     desc: 'Res 50g • Pollo 50g • Tortillas 40g\n1 Birria + 1 Pollo Copal',
     macros: {
-      calories: 530,
+      calories: 342,
       protein: 40,
       carbs: 40,
       fat: 24,
@@ -40,9 +40,9 @@ const COMBOS: Combo[] = [
     name: '3 Tacos',
     displayName: 'Combo Deficit',
     price: 8,
-    desc: 'Res 80g • Pollo 150g • Tortillas 75g\n1 Birria + 2 Pollo Copal',
+    desc: 'Res 50g • Pollo 100g • Tortillas 60g\n1 Birria + 2 Pollo Copal',
     macros: {
-      calories: 775,
+      calories: 505,
       protein: 62,
       carbs: 58,
       fat: 34,
@@ -53,9 +53,9 @@ const COMBOS: Combo[] = [
     name: '4 Tacos',
     displayName: 'Combo Aumento/Elite',
     price: 10,
-    desc: 'Res 160g • Pollo 150g • Tortillas 100g\n2 Birria + 2 Pollo Copal',
+    desc: 'Res 100g • Pollo 100g • Tortillas 80g\n2 Birria + 2 Pollo Copal',
     macros: {
-      calories: 1060,
+      calories: 684,
       protein: 80,
       carbs: 80,
       fat: 48,
@@ -204,7 +204,7 @@ export default function MenuPage({
 
       {category === 'tacos' && (
         <>
-          <h2 className={styles.combosTitle}>Combos Tacos</h2>
+          <h2 className={styles.combosTitle}>Combos</h2>
           <div className={styles.combosList}>
             {combos.map((c) => {
               const tacoCount = parseInt(c.name[0]);
@@ -248,7 +248,8 @@ export default function MenuPage({
           <div className={menuStyles.pizzasNoteContent}>
             <h3 className={menuStyles.pizzasNoteTitle}>¿Quieres más sabor?</h3>
             <p className={menuStyles.pizzasNoteDesc}>
-              Combina 3 pizzas de diferentes variedades — una de cada o como prefieras
+              Combina 3 pizzas de diferentes variedades — una de cada o como
+              prefieras
             </p>
           </div>
         </div>
