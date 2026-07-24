@@ -65,7 +65,7 @@ export const DISHES: Dish[] = [
     name: 'Pizzas Primavera',
     video: '/pizza-primavera-animation.mp4',
     price: 7.5,
-    desc: 'Pollo molido 150g • Mozzarella 24g • Salsa Napolitana 30g • Tocineta Ahumada 30g • Maíz 24g • Masa de pollo 100% proteína, sin harinas ni gluten. La versión más completa: tocineta ahumada que profundiza el sabor, maíz fresco que trae dulzura natural. Proteína doble, vegetales reales, macros perfectos. Cuando quieres más que la clásica.',
+    desc: 'Pollo molido 150g • Mozzarella 24g • Salsa Napolitana 30g • Tocineta Ahumada 30g • Maíz 24g • Masa de pollo 100% proteína, sin harinas ni gluten. La versión más completa: tocineta ahumada que profundiza el sabor, maíz fresco que trae dulzura natural. Cuando quieres más que la clásica.',
     category: 'pizzas',
     macros: {
       calories: 420,
@@ -79,7 +79,7 @@ export const DISHES: Dish[] = [
     name: 'Pizzas Funghi-Pomodoro',
     video: '/pizza-funghi-pomodoro-animation.mp4',
     price: 7.5,
-    desc: 'Pollo molido 150g • Mozzarella 24g • Salsa Napolitana 30g • Vegetales 30g • La pizza que suena a restaurante italiano. Masa de pollo 100% proteína, sin harinas ni gluten. Champiñones salteados que aportan umami profundo, tomates secos concentrados en sabor, salsa pomodoro fresca. La prueba de que comer sano no significa comer aburrido.',
+    desc: 'Pollo molido 150g • Mozzarella 24g • Salsa Napolitana 30g • Vegetales 30g • La pizza que suena a restaurante italiano. Masa de pollo 100% proteína, sin harinas ni gluten. Champiñones salteados que aportan umami profundo, tomates secos concentrados en sabor, pimenton verde y salsa pomodoro fresca. La prueba de que comer sano no significa comer aburrido.',
     category: 'pizzas',
     macros: {
       calories: 420,
