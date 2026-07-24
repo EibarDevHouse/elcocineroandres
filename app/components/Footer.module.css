@@ -42,8 +42,7 @@
 }
 
 .logoLink:hover {
-  background: rgba(35, 60, 38, 0.08);
-  color: #3a5c3f;
+  scale: 1.2;
 }
 
 .logoPlaceholder {
