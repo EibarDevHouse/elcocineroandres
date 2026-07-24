@@ -21,7 +21,8 @@
       "Bash(npx chromium-cli eval --url http://localhost:3000/menu/pizzas ' *)",
       "Bash(curl -s \"http://localhost:3000/menu/pizzas\")",
       "Bash(curl -s \"http://localhost:3000/menu/tacos\")",
-      "Bash(curl -s \"http://localhost:3000/menu/ceviches\")"
+      "Bash(curl -s \"http://localhost:3000/menu/ceviches\")",
+      "Bash(curl -s \"http://localhost:3000/\")"
     ]
   }
 }

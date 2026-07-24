@@ -1,0 +1,56 @@
+:root {
+  --color-primary: #233c26;
+  --color-bg-light: #f5f1e8;
+  --color-text: #141414;
+  --color-text-dim: #141414aa;
+}
+
+.footer {
+  background: var(--color-bg-light);
+  border-top: 1px solid rgba(35, 60, 38, 0.1);
+  padding: 24px 16px;
+}
+
+.footerContent {
+  max-width: 480px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.poweredBy {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--color-text-dim);
+}
+
+.poweredByText {
+  font-weight: 500;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: var(--color-primary);
+  transition: all 0.2s;
+  border-radius: 6px;
+}
+
+.logoLink:hover {
+  background: rgba(35, 60, 38, 0.08);
+  color: #3a5c3f;
+}
+
+.logoPlaceholder {
+  width: 150px;
+}
+
+.companyName {
+  font-weight: 600;
+  font-size: 13px;
+}

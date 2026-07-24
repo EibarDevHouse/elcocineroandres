@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import Footer from './components/Footer';
 
 export const metadata: Metadata = {
   title: 'El Cocinero Andrés',
@@ -36,7 +37,10 @@ export default function RootLayout({
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
       </head>
-      <body className="m-0 p-0">{children}</body>
+      <body className="m-0 p-0">
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

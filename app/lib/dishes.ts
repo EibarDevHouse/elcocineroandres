@@ -37,7 +37,7 @@ export const DISHES: Dish[] = [
     name: 'Taco de Pollo Copal',
     video: '/taco-pollo-animation.mp4',
     price: 3,
-    desc: `Pollo 50g • Tortilla 20g • Pechuga jugosa marinada 24 horas en pasta de tomate fresca y una mezcla secreta de chiles y ajo. Sellada en la plancha hasta que los bordes crujientes atrapan toda la humedad. Desmenuzada en fibras tiernas que se deshacen con cada mordida. Tortilla de maíz tostada, coronado con cebolla y cilantro frescos. Ligero, balanceado, sin grasas añadidas. Tu proteína limpia de verdad.`,
+    desc: `Pollo 50g • Tortilla 20g • Pechuga jugosa marinada 24 horas en pasta de tomate fresca y una mezcla secreta de chiles y ajo. Sellada en la plancha hasta que los bordes crujientes atrapan toda la humedad. Tortilla de maíz tostada, coronado con cebolla y cilantro frescos. Ligero, balanceado, sin grasas añadidas.`,
     category: 'tacos',
     macros: {
       calories: 163,
@@ -51,7 +51,7 @@ export const DISHES: Dish[] = [
     name: 'Pizzas Margarita',
     video: '/pizza-margarita-animation.mp4',
     price: 7.5,
-    desc: 'Pollo molido 150g • Mozzarella 24g • Salsa Napolitana 30g • La pizza que siempre quisiste comer sin culpa. Masa 100% de pechuga de pollo molida, horneada hasta quedar crujiente en los bordes y firme en el centro. Cero harinas. Cero gluten. Salsa pomodoro casera sin azúcar añadida, mozzarella bajo en grasa que se derrite en cada bocado. Tomate fresco y albahaca. Es proteína pura disfrazada de pizza. Macros perfectos, sabor impecable. El arma secreta para mantener el antojo bajo control sin romper el déficit.',
+    desc: 'Pollo molido 150g • Mozzarella 24g • Salsa Napolitana 30g • La pizza que siempre quisiste comer sin culpa. Masa 100% de pechuga de pollo molida, horneada hasta quedar crujiente en los bordes y firme en el centro. Cero harinas. Cero gluten. Salsa pomodoro casera sin azúcar añadida, mozzarella bajo en grasa. Tomate fresco y albahaca. Es pura proteína disfrazada de pizza. El arma secreta para mantener el antojo bajo control sin romper el déficit.',
     category: 'pizzas',
     macros: {
       calories: 420,
