@@ -79,7 +79,7 @@ export const DISHES: Dish[] = [
     name: 'Pizzas Funghi-Pomodoro',
     video: '/pizza-funghi-pomodoro-animation.mp4',
     price: 7.5,
-    desc: 'Pollo molido 150g • Mozzarella 24g • Salsa Napolitana 30g • Vegetales 30g • La pizza que suena a restaurante italiano. Masa de pollo 100% proteína, sin harinas ni gluten. Champiñones salteados que aportan umami profundo, tomates secos concentrados en sabor, pimenton verde y salsa pomodoro fresca. La prueba de que comer sano no significa comer aburrido.',
+    desc: 'Pollo molido 150g • Mozzarella 24g • Salsa Napolitana 30g • Vegetales 30g • La pizza que suena a restaurante italiano. Masa de pollo 100% proteína, sin harinas ni gluten. Champiñones salteados que aportan umami profundo, tomates secos concentrados en sabor, pimentón verde y salsa pomodoro fresca. La prueba de que comer sano no significa comer aburrido.',
     category: 'pizzas',
     macros: {
       calories: 420,
