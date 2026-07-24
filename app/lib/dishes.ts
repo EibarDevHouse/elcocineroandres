@@ -65,7 +65,7 @@ export const DISHES: Dish[] = [
     name: 'Pizzas Primavera',
     video: '/pizza-primavera-animation.mp4',
     price: 7.5,
-    desc: 'Pollo molido 150g • Mozzarella 24g • Salsa Napolitana 30g • Tocineta Ahumada 30g • Maíz enlatado 24g • Masa de pollo 100% proteína, sin harinas ni gluten. La versión más completa: tocineta ahumada que profundiza el sabor, maíz fresco que trae dulzura natural. Proteína doble, vegetales reales, macros perfectos. Cuando quieres más que la clásica.',
+    desc: 'Pollo molido 150g • Mozzarella 24g • Salsa Napolitana 30g • Tocineta Ahumada 30g • Maíz 24g • Masa de pollo 100% proteína, sin harinas ni gluten. La versión más completa: tocineta ahumada que profundiza el sabor, maíz fresco que trae dulzura natural. Proteína doble, vegetales reales, macros perfectos. Cuando quieres más que la clásica.',
     category: 'pizzas',
     macros: {
       calories: 420,
