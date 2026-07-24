@@ -23,7 +23,7 @@ export const DISHES: Dish[] = [
     name: 'Taco de Birria',
     video: '/taco-birria-animation.mp4',
     price: 3,
-    desc: 'Res 50g • Tortilla 20g • Res estofada lentamente en adobo de chiles. Carne que se deshace en tu boca. Res cocinada más de 6 horas en una infusión de ajíes secos y especias hasta que cada fibra cede al primer mordisco. Tortilla dorada en su propio consomé aromático, rellena de queso derretido y cilantro fresco. Proteína pura, sin culpas, puro placer.',
+    desc: 'Res 50g • Tortilla 20g • Res estofada lentamente en adobo de chiles. Carne que se deshace en tu boca. Res cocinada más de 6 horas en una infusión de ajíes secos y especias hasta que cada fibra cede al primer mordisco. Tortilla dorada en su propio consomé aromático, rellena de queso derretido, cebolla y cilantro fresco. Proteína pura, sin culpas, puro placer.',
     category: 'tacos',
     macros: {
       calories: 179,
@@ -37,7 +37,7 @@ export const DISHES: Dish[] = [
     name: 'Taco de Pollo Copal',
     video: '/taco-pollo-animation.mp4',
     price: 3,
-    desc: `Pollo 50g • Tortilla 20g • Pechuga jugosa marinada 24 horas en pasta de tomate fresca y una mezcla secreta de chiles y ajo. Sellada en la plancha hasta que los bordes crujientes atrapan toda la humedad. Desmenuzada en fibras tiernas que se deshacen con cada mordida. Tortilla de maíz tostada, coronada con pico de gallo ultra fresco. Ligero, balanceado, sin grasas añadidas. Tu proteína limpia de verdad.`,
+    desc: `Pollo 50g • Tortilla 20g • Pechuga jugosa marinada 24 horas en pasta de tomate fresca y una mezcla secreta de chiles y ajo. Sellada en la plancha hasta que los bordes crujientes atrapan toda la humedad. Desmenuzada en fibras tiernas que se deshacen con cada mordida. Tortilla de maíz tostada, coronado con cebolla y cilantro frescos. Ligero, balanceado, sin grasas añadidas. Tu proteína limpia de verdad.`,
     category: 'tacos',
     macros: {
       calories: 163,
