@@ -93,7 +93,7 @@ export const DISHES: Dish[] = [
     name: 'Ceviche de Róbalo Peq.',
     video: '/ceviche-animation.mp4',
     price: 7,
-    desc: 'Róbalo 180g • Casabe 30g • Róbalo blanco curado al momento en limón puro. Cebolla morada en plumas finas, cilantro fresco, un toque de ají. Proteína magra de digestión rápida, cero grasas añadidas. Refrescante, ligero, perfecto para recuperar post-entreno sin pesadez. Tu opción elegante cuando quieres algo diferente.',
+    desc: 'Róbalo 180g • Casabe 30g • Róbalo blanco curado al momento en limón puro. Cebolla morada en plumas finas, cilantro fresco, un toque de ají y pimenton rojo. Proteína magra de digestión rápida, cero grasas añadidas. Refrescante, ligero, perfecto para recuperar post-entreno sin pesadez. Tu opción elegante cuando quieres algo diferente.',
     category: 'ceviches',
     macros: {
       calories: 445,
